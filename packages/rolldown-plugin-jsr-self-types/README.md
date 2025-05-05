@@ -8,7 +8,11 @@ The plugin is designed to be used with [Rolldown](https://rolldown.rs), a JavaSc
 
 > [!WARNING]
 > **This plugin is in early development.** It may not work as expected and may change in the future. Please use it at your own risk.
-> **Rolldown doesn't generate types by default.** So you need to generate them with `tsc`. But there are a plan for that in the future [read this issue](https://github.com/rolldown/rolldown/issues/4393)
+> **Rolldown doesn't generate types natively.** So you need to generate them with `tsc`. But there are a plan for that in the future [read this issue](https://github.com/rolldown/rolldown/issues/4393)
+> Or you can use [`rolldown-plugin-dts`](https://github.com/sxzz/rolldown-plugin-dts) to generate types for you.
+
+> [!NOTE]
+> This plugin also work with [`tsdown`](https://tsdown.dev) "The Elegant Library Bundler"
 
 ## Usage
 

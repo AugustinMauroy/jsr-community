@@ -3,10 +3,15 @@
     "version": "0.0.1-beta.1",
     "description": "A plugin for JSR to add self types to the Rolldown plugin.",
     "main": "dist/mod.js",
+    "type": "module",
     "scripts": {
-        "build": "rolldown build --config ./rolldown.config.ts"
+        "build": "rolldown build --config ./rolldown.config.ts",
+        "test": "node --test tests/**/**.test.ts"
     },
     "devDependencies": {
-        "rolldown": "^1.0.0-beta.8"
+        "@types/node": "^22.15.3",
+        "rolldown": "^1.0.0-beta.8",
+        "rolldown-plugin-dts": "^0.10.1",
+        "typescript": "^5.8.3"
     }
 }
