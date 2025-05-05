@@ -1,6 +1,14 @@
 {
-  "scripts": {},
-  "workspaces": [
-    "packages/*"
-  ]
+  "scripts": {
+    "biome:format:fix": "biome format --fix ./",
+    "biome:format": "biome format ./",
+    "biome:lint:fix": "biome lint --fix ./",
+    "biome:lint": "biome lint ./",
+    "biome:ci": "biome ci ./",
+    "pre-commit": "node --run biome:lint:fix; node --run biome:format:fix"
+  },
+  "workspaces": ["packages/*"],
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4"
+  }
 }
