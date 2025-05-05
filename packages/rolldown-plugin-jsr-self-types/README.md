@@ -23,7 +23,7 @@ import { defineConfig } from 'rolldown'
 import { jsrSelfTypesPlugin } from '@jsr-community/rolldown-plugin-jsr-self-types'
 
 export default defineConfig({
-  input: './src/**/**.ts',
+  input: './src/mod.ts',
   output: {
     dir: './dist',
     format: 'esm',
