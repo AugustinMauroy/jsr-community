@@ -1,0 +1,21 @@
+{
+  "$schema": "https://jsr.io/schema/config-file.v1.json",
+  "version": "0.0.1-beta.1",
+  "name": "@jsr-community/typescript-plugin-jsr-self-types",
+  "description": "A plugin for JSR to add self types to the Typesscript cli",
+  "exports": "./dist/mod.js",
+  "license": "MIT",
+  "publish": {
+    "include": [
+      "README.md",
+      "LICENSE",
+      "dist/**/*.js",
+      "dist/**/*.d.ts",
+      "dist/**/*.map"
+    ],
+    // https://jsr.io/docs/publishing-packages#un-gitignoring-files-when-not-using-include
+    "exclude": [
+      "!dist"
+    ]
+  }
+}
