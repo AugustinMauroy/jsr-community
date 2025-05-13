@@ -4,11 +4,11 @@ import type { Plugin, RenderedChunk } from "rolldown";
  * Options for the JSR @ts-self-types plugin.
  */
 type JsrSelfTypesPlugin = {
-    /**
-     * Enable or disable the plugin. Defaults to `true`.
-     * If disabled, the plugin will not add any banners.
-     */
-    enable?: boolean;
+	/**
+	 * Enable or disable the plugin. Defaults to `true`.
+	 * If disabled, the plugin will not add any banners.
+	 */
+	enable?: boolean;
 };
 
 /**
@@ -40,15 +40,15 @@ type JsrSelfTypesPlugin = {
  * ```
  */
 export const jsrSelfTypesPlugin = ({
-    enable = true,
+	enable = true,
 }): Plugin<JsrSelfTypesPlugin> => ({
-    name: "JSR @ts-self-types",
-    banner: enable
-        ? (chunk: RenderedChunk): string => {
-                const filenameWithoutExt = chunk.fileName.replace(/\.[^/.]+$/, "");
-                return `/* @ts-self-types="./${filenameWithoutExt}.d.ts" */\n`;
-            }
-        : undefined,
+	name: "JSR @ts-self-types",
+	banner: enable
+		? (chunk: RenderedChunk): string => {
+				const filenameWithoutExt = chunk.fileName.replace(/\.[^/.]+$/, "");
+				return `/* @ts-self-types="./${filenameWithoutExt}.d.ts" */\n`;
+			}
+		: undefined,
 });
 
 export default jsrSelfTypesPlugin;

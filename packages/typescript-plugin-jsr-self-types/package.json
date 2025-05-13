@@ -1,8 +1,8 @@
 {
-  "name": "@jsr-community/rolldown-plugin-jsr-self-types",
+  "name": "@jsr-community/typescript-plugin-jsr-self-types",
   "version": "0.0.1-beta.1",
-  "description": "A plugin for JSR to add self types to the Rolldown plugin.",
-  "main": "src/mod.ts",
+  "description": "A plugin for JSR to add self types to the Typesscript cli",
+  "main": "dist/mod.js",
   "type": "module",
   "scripts": {
     "build": "rolldown build --config ./rolldown.config.ts",
