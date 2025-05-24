@@ -12,10 +12,5 @@ export default defineConfig({
 		format: "esm",
 		sourcemap: true,
 	},
-	plugins: [
-		dts({
-			sourcemap: false,
-		}),
-		jsrSelfTypesPlugin({ enable: true }),
-	],
+	plugins: [dts({ sourcemap: false }), jsrSelfTypesPlugin({ enable: true })],
 });

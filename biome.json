@@ -9,7 +9,13 @@
     "enabled": false
   },
   "files": {
-    "include": ["**/*.js", "**/*.ts", "**/*.json"]
+    "include": [
+      "**/*.js",
+      "**/*.ts",
+      "**/*.json",
+      "**/*.jsonc"
+    ],
+    "ignore": ["**/dist/**"]
   },
   "formatter": {
     "enabled": true,
